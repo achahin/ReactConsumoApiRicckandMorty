@@ -15,7 +15,9 @@
 </ul>
 <hr/>
 
-## Pendientes por programar: botton ver mas..
+## Pendientes por programar:
+
+botton ver mas..
 
 <hr/>
 
@@ -43,9 +45,11 @@ npm start
 
 ## subida a Heroku:
 
----
+<p>
 
-Modificar el archivo package.json, agregando engies, con la version usada de npm y node:
+Modificar el archivo package.json, agregando engies, con la version usada de npm y
+<br>Ejemplo de modificación: <br>
+node:
 {
 "name": "personajes",
 "version": "0.1.0",
@@ -56,13 +60,13 @@ Modificar el archivo package.json, agregando engies, con la version usada de npm
 },...
 
 <br>
-## En consola
-___________
-
+En consola
+----------
+<br>
 heroku login (ingresar credenciales )
-git init
-git add .
-git commit -m “initial commit”
-heroku create ----( o crear el proyecto desde el browser en la consola..)
-heroku git:remote -a personajesapirick
-git push heroku master
+<br>git init
+<br>git add .
+<br>git commit -m “initial commit”
+<br>heroku create ----( o crear el proyecto desde el browser en la consola..)
+<br>heroku git:remote -a personajesapirick
+<br>git push heroku master
