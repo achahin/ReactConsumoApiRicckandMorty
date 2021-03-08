@@ -1,6 +1,7 @@
 # Consumo de API personajes Rick and Morty - End Point. Characters
 
-<p>Permite busqueda de personajes por nombre, paginador, y seleccion "💔" /deselección "❌"de favoritos.
+<p>Permite busqueda y filtro  de personajes por nombre,
+<br>  y seleccion "💔" /deselección "❌"de favoritos.
 
 ## Tecnologías
 
@@ -13,6 +14,11 @@
     
 </ul>
 <hr/>
+
+
+## Link de prueba:
+
+http://personajesapirick.herokuapp.com/
 
 ## Instalacion
 
@@ -31,3 +37,29 @@ npm i
 ```
 npm start
 ```
+
+## subida a Heroku:
+
+---
+
+Modificar el archivo package.json, agregando engies, con la version usada de npm y node:
+{
+"name": "personajes",
+"version": "0.1.0",
+"private": true,
+"engines": {
+"npm": "6.14.11",
+"node": "14.15.5"
+},...
+
+<br>
+## En consola
+___________
+
+heroku login (ingresar credenciales )
+git init
+git add .
+git commit -m “initial commit”
+heroku create ----( o crear el proyecto desde el browser en la consola..)
+heroku git:remote -a personajesapirick
+git push heroku master
